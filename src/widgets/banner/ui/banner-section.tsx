@@ -1,6 +1,10 @@
+import { SendParcelProvider } from "@/features/send-parcel";
 import { Section } from "@/shared/ui/section";
 import { BannerInfo } from "@/widgets/banner-info";
+import { BannerSendParcel } from "@/widgets/banner-send-parcel";
+import { BannerTrack } from "@/widgets/banner-track";
 import { BannerVideo } from "@/widgets/banner-video";
+import React from "react";
 
 const BannerBackground: React.FC = () => {
 	return (
@@ -10,14 +14,26 @@ const BannerBackground: React.FC = () => {
 
 const BannerSection: React.FC = () => {
 	return (
-		<Section className="bg-banner pl-base pt-9 pb-8 pr-8 h-[calc(100dvh-80px)] w-full relative flex flex-row justify-between items-center">
+		<Section className="bg-banner pl-base pt-9 pb-8 pr-8 w-full relative flex flex-row justify-between items-center">
 			<BannerBackground />
 			<div className="flex flex-col gap-20">
 				<BannerInfo />
 				<BannerVideo />
 			</div>
+			<div className="flex flex-col gap-[72px]">
+				<BannerSendParcel />
+				<BannerTrack />
+			</div>
 		</Section>
 	);
 };
 
-export { BannerSection };
+const Banner: React.FC = () => {
+	return (
+		<SendParcelProvider>
+			<BannerSection />
+		</SendParcelProvider>
+	);
+};
+
+export { Banner };

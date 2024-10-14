@@ -1,4 +1,4 @@
-import { BannerSection } from "@/widgets/banner-section";
+import { Banner } from "@/widgets/banner";
 import { Header } from "@/widgets/header";
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 		<>
 			<Header />
 			<main>
-				<BannerSection />
+				<Banner />
 			</main>
 		</>
 	);

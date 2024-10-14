@@ -1,3 +1,3 @@
-import { TrackPackage } from "./ui/TrackPackage";
+import { TrackPackage } from "./ui/track-package";
 
 export { TrackPackage };

@@ -71,6 +71,10 @@ export default {
 					DEFAULT: "hsl(var(--border))",
 					hover: "hsl(var(--input-hover))",
 				},
+				switch: {
+					DEFAULT: "hsl(var(--switch))",
+					active: "hsl(var(--white))",
+				},
 				ring: "hsl(var(--ring))",
 				decoration: "hsl(var(--decoration))",
 				chart: {

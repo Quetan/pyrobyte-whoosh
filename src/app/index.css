@@ -63,7 +63,7 @@
 		--primary: var(--blue);
 		--primary-foreground: 0 0% 100%;
 		--secondary: 50 100% 59%;
-		--secondary-foreground: 224 65% 97%;
+		--secondary-foreground: var(--darkblue);
 		--muted: 50 100% 59%;
 		--muted-foreground: var(--lightgray);
 		--accent: 50 100% 59%;
@@ -72,7 +72,9 @@
 		--destructive-foreground: 0 0% 100%;
 
 		--border: var(--lightblue);
+		--switch: 221 100% 97%;
 		--input: 0 0% 89.8%;
+		--input-hover: 223 100% 97%;
 		--ring: var(--darkblue);
 		--decoration: 222 59% 85%;
 		--chart-1: 12 76% 61%;
@@ -82,33 +84,6 @@
 		--chart-5: 27 87% 67%;
 		--radius: 0.5rem;
 		--base-padding: 103px;
-	}
-	.dark {
-		--background: var(--darkblue);
-		--foreground: 0 0% 100%;
-		--card: var(--darkblue);
-		--card-foreground: 0 0% 100%;
-		--popover: var(--darkblue);
-		--popover-foreground: 0 0% 100%;
-		--primary: 0 0% 100%;
-		--primary-foreground: var(--blue);
-		--secondary: 0 0% 14.9%;
-		--secondary-foreground: 0 0% 100%;
-		--muted: 0 0% 14.9%;
-		--muted-foreground: 0 0% 63.9%;
-		--accent: 0 0% 14.9%;
-		--accent-foreground: 0 0% 100%;
-		--destructive: 0 62.8% 30.6%;
-		--destructive-foreground: 0 0% 100%;
-		--border: 0 0% 14.9%;
-		--input: 0 0% 14.9%;
-		--input-hover: 223 100% 97%;
-		--ring: 0 0% 83.1%;
-		--chart-1: 220 70% 50%;
-		--chart-2: 160 60% 45%;
-		--chart-3: 30 80% 55%;
-		--chart-4: 280 65% 60%;
-		--chart-5: 340 75% 55%;
 	}
 }
 
@@ -128,11 +103,19 @@
 		@apply text-[22px] leading-[32px] font-normal;
 	}
 
+	p {
+		@apply font-introBook;
+	}
+
 	.video:hover > img {
 		@apply scale-110;
 	}
 
 	.video:hover > button {
 		@apply scale-125 bg-black/50;
+	}
+
+	.tooltip:hover > circle {
+		@apply fill-foreground;
 	}
 }
