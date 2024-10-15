@@ -16,6 +16,9 @@ export default {
 			padding: {
 				base: "var(--base-padding)",
 			},
+			margin: {
+				base: "var(--base-padding)",
+			},
 			backgroundImage: {
 				"banner-section": 'url("../banner-bg.svg")',
 			},
@@ -54,7 +57,7 @@ export default {
 					DEFAULT: "hsl(var(--destructive))",
 					foreground: "hsl(var(--destructive-foreground))",
 				},
-				lighblue: {
+				lightblue: {
 					DEFAULT: "hsl(var(--lighblue))",
 				},
 				red: {
@@ -74,6 +77,9 @@ export default {
 				switch: {
 					DEFAULT: "hsl(var(--switch))",
 					active: "hsl(var(--white))",
+				},
+				placeholder: {
+					DEFAULT: "hsl(var(--placeholder))",
 				},
 				ring: "hsl(var(--ring))",
 				decoration: "hsl(var(--decoration))",

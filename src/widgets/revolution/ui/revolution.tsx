@@ -2,13 +2,12 @@ import { Card, CardDescription, CardIcon, CardTitle } from "@/shared/ui/card";
 import { Courier, Job, Support } from "@/shared/ui/icons";
 import { Route } from "@/shared/ui/icons/route";
 import { Section } from "@/shared/ui/section";
+import { SectionTitle } from "@/shared/ui/section-title";
 
 const Revolution: React.FC = () => {
 	return (
 		<Section className="pt-[98px] pb-20 px-base flex flex-col justify-center text-center">
-			<h1 className="h1 mb-[29px] w-max mx-auto">
-				Express delivery market revolution
-			</h1>
+			<SectionTitle>Express delivery market revolution</SectionTitle>
 			<p className="text-[22px] leading-[32px] opacity-50 w-[754px] mx-auto mb-10">
 				Express courier service in the city. We are a reliable logistics partner
 				for delivery services for online stores and restaurants!

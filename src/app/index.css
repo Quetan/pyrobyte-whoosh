@@ -52,6 +52,7 @@
 		--green: 145 63% 42%;
 		--lightgray: 0 0 40%;
 		--white: 0 0 100%;
+		--placeholder: 222 51% 90%;
 
 		--background: var(--white);
 		--foreground: var(--darkblue);
@@ -118,5 +119,8 @@
 
 	.tooltip:hover > circle {
 		@apply fill-foreground;
+	}
+	.partner-coursel-item:not(:hover) svg path {
+		fill: hsl(var(--lightblue));
 	}
 }

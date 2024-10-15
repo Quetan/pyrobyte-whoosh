@@ -5,7 +5,7 @@ type SectionProps = React.PropsWithChildren &
 
 const Section: React.FC<SectionProps> = ({ children, className, ...props }) => {
 	return (
-		<section className={cn("", className)} {...props}>
+		<section className={cn("relative", className)} {...props}>
 			{children}
 		</section>
 	);
