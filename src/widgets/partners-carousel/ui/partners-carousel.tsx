@@ -17,46 +17,45 @@ const PartnersCarouselItem: React.FC<PropsWithChildren> = ({ children }) => {
 	);
 };
 
+const CarouselItems: React.FC = () => {
+	return (
+		<>
+			<PartnersCarouselItem>
+				<Alva />
+			</PartnersCarouselItem>
+			<PartnersCarouselItem>
+				<Tendo />
+			</PartnersCarouselItem>
+			<PartnersCarouselItem>
+				<Fagor />
+			</PartnersCarouselItem>
+			<PartnersCarouselItem>
+				<RadioShack />
+			</PartnersCarouselItem>
+			<PartnersCarouselItem>
+				<GuitarCenter />
+			</PartnersCarouselItem>
+		</>
+	);
+};
+
 const PartnersCarousel: React.FC = () => {
 	return (
 		<Carousel
+			opts={{
+				loop: true,
+				align: "center",
+			}}
 			plugins={[
 				Autoplay({
-					delay: 3000,
+					delay: 1500,
 				}),
 			]}
 		>
 			<CarouselContent>
-				<PartnersCarouselItem>
-					<Alva />
-				</PartnersCarouselItem>
-				<PartnersCarouselItem>
-					<Tendo />
-				</PartnersCarouselItem>
-				<PartnersCarouselItem>
-					<Fagor />
-				</PartnersCarouselItem>
-				<PartnersCarouselItem>
-					<RadioShack />
-				</PartnersCarouselItem>
-				<PartnersCarouselItem>
-					<GuitarCenter />
-				</PartnersCarouselItem>
-				<PartnersCarouselItem>
-					<Alva />
-				</PartnersCarouselItem>
-				<PartnersCarouselItem>
-					<Tendo />
-				</PartnersCarouselItem>
-				<PartnersCarouselItem>
-					<Fagor />
-				</PartnersCarouselItem>
-				<PartnersCarouselItem>
-					<RadioShack />
-				</PartnersCarouselItem>
-				<PartnersCarouselItem>
-					<GuitarCenter />
-				</PartnersCarouselItem>
+				<CarouselItems />
+				<CarouselItems />
+				<CarouselItems />
 			</CarouselContent>
 		</Carousel>
 	);

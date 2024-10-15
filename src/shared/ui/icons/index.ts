@@ -18,6 +18,7 @@ import { Box } from "./box";
 import { Calculation } from "./calculation";
 import { Paperwork } from "./paperwork";
 import { Payment } from "./payment";
+import { CarouselArrow } from "./carousel-arrow";
 
 type IconProps = React.SVGProps<SVGSVGElement> & {
 	size?: number;
@@ -44,5 +45,6 @@ export {
 	Calculation,
 	Paperwork,
 	Payment,
+	CarouselArrow,
 };
 export type { IconProps };
