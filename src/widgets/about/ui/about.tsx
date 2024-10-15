@@ -10,7 +10,10 @@ const About: React.FC = () => {
 	};
 	return (
 		<Section className="pt-[86px] pb-[84px] px-base">
-			<details className="text-muted-foreground" open={open}>
+			<details
+				className="text-muted-foreground max-w-[1024px] mx-auto"
+				open={open}
+			>
 				<summary>
 					<p className="mb-4">
 						Since 2019, LibertyWalk has successfully provided express courier
