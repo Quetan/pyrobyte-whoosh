@@ -27,7 +27,7 @@ const VideoPlaceholder: React.FC = () => {
 		<div className="video w-[374px] h-[232px] rounded-lg relative overflow-hidden">
 			<img
 				className="w-full h-full object-cover transition-transform duration-700 ease-in-out"
-				src="./video.png"
+				src="./video.webp"
 				alt="How it Works video example"
 			/>
 			<PlayButton />

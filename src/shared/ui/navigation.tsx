@@ -14,7 +14,7 @@ const NavigationItem: React.FC<NavigationProps> = ({
 		<a
 			href={href}
 			className={cn(
-				"hover:opacity-70 hover:underline hover:decoration-decoration hover:decoration-dashed hover:underline-offset-4",
+				"text-muted-foreground no-underline font-normal font-introBook hover:opacity-70 hover:underline hover:decoration-decoration hover:decoration-dashed hover:underline-offset-4",
 				className
 			)}
 			{...props}

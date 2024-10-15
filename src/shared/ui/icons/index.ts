@@ -15,6 +15,9 @@ import { Courier } from "./courier";
 import { Support } from "./support";
 import { Job } from "./job";
 import { Box } from "./box";
+import { Calculation } from "./calculation";
+import { Paperwork } from "./paperwork";
+import { Payment } from "./payment";
 
 type IconProps = React.SVGProps<SVGSVGElement> & {
 	size?: number;
@@ -38,5 +41,8 @@ export {
 	Support,
 	Job,
 	Box,
+	Calculation,
+	Paperwork,
+	Payment,
 };
 export type { IconProps };

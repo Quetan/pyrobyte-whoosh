@@ -11,7 +11,7 @@ const SectionSubtitle: React.FC<SectionSubtitleProps> = ({
 	return (
 		<p
 			className={cn(
-				"text-[22px] leading-[32px] opacity-50 w-[754px] mx-auto mb-10",
+				"text-[22px] leading-[32px] opacity-50 w-[754px] mx-auto mb-10 text-center",
 				className
 			)}
 			{...props}

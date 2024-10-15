@@ -109,6 +109,10 @@
 		@apply font-introBook;
 	}
 
+	a {
+		@apply text-primary underline hover:opacity-70 hover:no-underline decoration-1 underline-offset-2;
+	}
+
 	.video:hover > img {
 		@apply scale-110;
 	}

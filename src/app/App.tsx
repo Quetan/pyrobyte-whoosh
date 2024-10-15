@@ -3,16 +3,19 @@ import { Banner } from "@/widgets/banner";
 import { Header } from "@/widgets/header";
 import { Partners } from "@/widgets/partners";
 import { Revolution } from "@/widgets/revolution";
+import { WhatWeDo } from "@/widgets/what-we-do";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<main>
+			<main className="overflow-x-hidden">
 				<Banner />
 				<Revolution />
 				<SectionDivider />
 				<Partners />
+				<WhatWeDo />
+				<div className="min-h-dvh"></div>
 			</main>
 		</>
 	);
