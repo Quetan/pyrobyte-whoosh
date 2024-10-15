@@ -46,6 +46,7 @@
 		--blue: 221 89% 56%;
 		--darkblue: 225 35% 17%;
 		--lightblue: 221 69% 86%;
+		--yellow: 50 100% 59%;
 		--red: 347 98% 63%;
 		--lightgreen: 145 50% 62%;
 		--green: 145 63% 42%;
@@ -62,11 +63,11 @@
 		--popover-foreground: var(--darkblue);
 		--primary: var(--blue);
 		--primary-foreground: 0 0% 100%;
-		--secondary: 50 100% 59%;
+		--secondary: var(--yellow);
 		--secondary-foreground: var(--darkblue);
-		--muted: 50 100% 59%;
+		--muted: var(--yellow);
 		--muted-foreground: var(--lightgray);
-		--accent: 50 100% 59%;
+		--accent: var(--yellow);
 		--accent-foreground: var(--blue);
 		--destructive: var(--red);
 		--destructive-foreground: 0 0% 100%;

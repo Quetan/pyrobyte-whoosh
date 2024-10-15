@@ -9,9 +9,12 @@ import { PinPrimary } from "./pin-primary";
 import { PinYellow } from "./pin-yellow";
 import { Close } from "./close";
 import { Onfoot } from "./onfoot";
-//TODO: fix icons
 import { Truck } from "./truck";
 import { Car } from "./car";
+import { Courier } from "./courier";
+import { Support } from "./support";
+import { Job } from "./job";
+import { Box } from "./box";
 
 type IconProps = React.SVGProps<SVGSVGElement> & {
 	size?: number;
@@ -31,5 +34,9 @@ export {
 	PinYellow,
 	Close,
 	Onfoot,
+	Courier,
+	Support,
+	Job,
+	Box,
 };
 export type { IconProps };

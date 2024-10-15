@@ -1,5 +1,5 @@
 import { TrackPackage } from "@/features/track-a-package";
-import { Logo } from "@/shared/logo";
+import { Logo } from "@/shared/ui/logo";
 import { City } from "@/shared/ui/city";
 import { Navigation } from "@/shared/ui/navigation";
 

@@ -1,4 +1,4 @@
-import { cn } from "./lib/utils";
+import { cn } from "../lib/utils";
 
 type LogoProps = React.ImgHTMLAttributes<HTMLImageElement> & {
 	href?: string;
