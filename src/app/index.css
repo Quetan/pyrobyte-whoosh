@@ -127,4 +127,8 @@
 	.partner-coursel-item:not(:hover) svg path {
 		fill: hsl(var(--lightblue));
 	}
+
+	summary::marker {
+		content: "";
+	}
 }

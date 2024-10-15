@@ -1,4 +1,5 @@
 import { SectionDivider } from "@/shared/ui/section-divider";
+import { About } from "@/widgets/about/ui/about";
 import { Banner } from "@/widgets/banner";
 import { Header } from "@/widgets/header";
 import { Partners } from "@/widgets/partners";
@@ -18,7 +19,7 @@ function App() {
 				<WhatWeDo />
 				<PaymentMethods />
 				<SectionDivider />
-				<div className="min-h-dvh"></div>
+				<About />
 			</main>
 		</>
 	);

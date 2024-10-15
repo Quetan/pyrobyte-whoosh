@@ -5,8 +5,6 @@ const CarouselArrow: React.FC<IconProps> = ({
 	height = 24,
 	...props
 }) => {
-	console.log("carousel-arrow");
-
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
