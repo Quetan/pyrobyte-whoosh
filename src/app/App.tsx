@@ -1,6 +1,7 @@
 import { SectionDivider } from "@/shared/ui/section-divider";
-import { About } from "@/widgets/about/ui/about";
+import { About } from "@/widgets/about";
 import { Banner } from "@/widgets/banner";
+import { Footer } from "@/widgets/footer";
 import { Header } from "@/widgets/header";
 import { Partners } from "@/widgets/partners";
 import { PaymentMethods } from "@/widgets/payment-methods";
@@ -21,6 +22,7 @@ function App() {
 				<SectionDivider />
 				<About />
 			</main>
+			<Footer />
 		</>
 	);
 }

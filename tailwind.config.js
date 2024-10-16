@@ -59,7 +59,7 @@ export default {
 					foreground: "hsl(var(--destructive-foreground))",
 				},
 				lightblue: {
-					DEFAULT: "hsl(var(--lighblue))",
+					DEFAULT: "hsl(var(--lightblue))",
 				},
 				red: {
 					DEFAULT: "hsl(var(--red))",

@@ -20,6 +20,12 @@ import { Paperwork } from "./paperwork";
 import { Payment } from "./payment";
 import { CarouselArrow } from "./carousel-arrow";
 import { Etc } from "./etc";
+import { Shield } from "./shield";
+import { PinToPin } from "./pin-to-pin";
+import { Facebook } from "./facebook";
+import { Instagram } from "./instagram";
+import { Youtube } from "./youtube";
+import { Vk } from "./vk";
 
 type IconProps = React.SVGProps<SVGSVGElement> & {
 	size?: number;
@@ -47,5 +53,11 @@ export {
 	Payment,
 	CarouselArrow,
 	Etc,
+	Shield,
+	PinToPin,
+	Facebook,
+	Instagram,
+	Youtube,
+	Vk,
 };
 export type { IconProps };
