@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
 				</span>
 			</SectionDivider>
 
-			<div className="grid grid-cols-3 items-center gap-[50px]  px-base">
+			<div className="grid grid-cols-3 items-center gap-[50px]">
 				<p className="text-[14px] font-introBook leading-[24px] text-center block text-foreground opacity-[64%] mx-auto">
 					© 2022. All rights reserved.
 				</p>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
 				<div className="relative pl-[26px] mx-auto">
 					<a
 						href="#"
-						className="text-[14px] leading-[24px] align-top no-underline font-introBook text-foreground opacity-[64%]"
+						className="text-[14px] leading-[24px] align-top no-underline font-introBook text-foreground opacity-[64%] hover:underline hover:decoration-decoration hover:decoration-dashed hover:underline-offset-4 hover:opacity-50"
 					>
 						Privacy policy
 					</a>

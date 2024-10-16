@@ -40,7 +40,7 @@ const FooterColListItem: React.FC<FooterColListItem> = ({
 		<li className={cn("", className)} {...props}>
 			<a
 				href={href}
-				className="text-[14px] leading-[32px] font-introBook no-underline text-foreground opacity-[67%] hover:underline hover:decoration-dashed hover:decoration-decoration"
+				className="text-[14px] leading-[32px] font-introBook no-underline text-foreground opacity-[67%] hover:opacity-50 hover:underline hover:decoration-dashed hover:decoration-decoration hover:underline-offset-4"
 			>
 				{children}
 			</a>
