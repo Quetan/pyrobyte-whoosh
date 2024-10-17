@@ -1,3 +1,4 @@
+import { useWindowDimensions } from "@/shared/lib/hooks";
 import {
 	FooterCol,
 	FooterColList,
@@ -16,12 +17,22 @@ import {
 import { SectionDivider } from "@/shared/ui/section-divider";
 
 const Footer: React.FC = () => {
+	const { width } = useWindowDimensions();
 	return (
-		<footer className="px-base pt-[85px] pb-[56px] bg-banner border-t border-border flex flex-col text-foreground overflow-x-hidden">
-			<div className="grid grid-cols-[3fr_2fr_2fr_3fr] gap-[50px]">
+		<footer className="px-4 pt-11 pb-6 lg:px-base lg:pt-[85px] lg:pb-[56px] bg-banner border-t border-border flex flex-col text-foreground overflow-x-hidden">
+			<div className=" flex flex-col gap-8 lg:grid lg:grid-cols-[3fr_2fr_2fr_3fr] lg:gap-[50px]">
 				<AboutCol />
-				<MenuCol />
-				<ServicesCol />
+				{width > 1024 ? (
+					<>
+						<MenuCol />
+						<ServicesCol />
+					</>
+				) : (
+					<div className="grid grid-cols-2 gap-8">
+						<MenuCol />
+						<ServicesCol />
+					</div>
+				)}
 				<ContactUsCol />
 			</div>
 			<SectionDivider className="my-6 gap-2">
@@ -30,24 +41,29 @@ const Footer: React.FC = () => {
 				</span>
 			</SectionDivider>
 
-			<div className="grid grid-cols-3 items-center gap-[50px]">
-				<p className="text-[14px] font-introBook leading-[24px] text-center block text-foreground opacity-[64%] mx-auto">
-					© 2022. All rights reserved.
-				</p>
+			<div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-[50px]">
+				{width > 1024 && (
+					<p className="text-[14px] font-introBook leading-[24px] text-center block text-foreground opacity-[64%] mx-auto">
+						© 2022. All rights reserved.
+					</p>
+				)}
+
 				<img
 					src="./pyrobyte.svg"
 					alt="logo"
 					className="w-[85px] h-[63px] mx-auto"
 				/>
-				<div className="relative pl-[26px] mx-auto">
-					<a
-						href="#"
-						className="text-[14px] leading-[24px] align-top no-underline font-introBook text-foreground opacity-[64%] hover:underline hover:decoration-decoration hover:decoration-dashed hover:underline-offset-4 hover:opacity-50"
-					>
-						Privacy policy
-					</a>
-					<Shield className="absolute top-1/2 -translate-y-[8px] left-0" />
-				</div>
+				{width > 1024 && (
+					<div className="relative pl-[26px] mx-auto">
+						<a
+							href="#"
+							className="text-[14px] leading-[24px] align-top no-underline font-introBook text-foreground opacity-[64%] hover:underline hover:decoration-decoration hover:decoration-dashed hover:underline-offset-4 hover:opacity-50"
+						>
+							Privacy policy
+						</a>
+						<Shield className="absolute top-1/2 -translate-y-[8px] left-0" />
+					</div>
+				)}
 			</div>
 		</footer>
 	);
@@ -56,7 +72,12 @@ const Footer: React.FC = () => {
 const AboutCol: React.FC = () => {
 	return (
 		<FooterCol className="pl-[60px]">
-			<FooterColTitle withBorder={false}>About Whoosh</FooterColTitle>
+			<FooterColTitle
+				className="-translate-x-[60px] lg:translate-x-0"
+				withBorder={false}
+			>
+				About Whoosh
+			</FooterColTitle>
 			<div className="relative">
 				<p className="text-[14px] leading-[24px] font-introBook opacity-[67%] max-w-[240px] text-balance">
 					Express delivery of documents and parcels for organizations, express
@@ -103,6 +124,7 @@ const ServicesCol: React.FC = () => {
 };
 
 const ContactUsCol: React.FC = () => {
+	const { width } = useWindowDimensions();
 	return (
 		<FooterCol>
 			<FooterColTitle>Contact Us</FooterColTitle>
@@ -113,7 +135,7 @@ const ContactUsCol: React.FC = () => {
 				8 800 934 5959
 			</a>
 
-			<div className="relative pl-[24px] mb-[58px]">
+			<div className="relative pl-[24px] mb-[26px] lg:mb-[58px]">
 				<p className="text-[14px] leading-[24px] font-introBook opacity-[64%]">
 					2545 W. Diversey Ave. <br /> 3rd Floor Chicago, IL 60647
 				</p>
@@ -122,7 +144,7 @@ const ContactUsCol: React.FC = () => {
 					className="absolute top-0 left-0 *:stroke-[#2B6BF3] opacity-[67%]"
 				/>
 			</div>
-			<div className="flex flex-row justify-between flex-wrap gap-6 max-w-[232px]">
+			<div className="flex flex-row justify-between lg:mx-0 mx-auto flex-wrap gap-6 max-w-[232px]">
 				<a href="">
 					<Facebook />
 				</a>
@@ -136,6 +158,22 @@ const ContactUsCol: React.FC = () => {
 					<Instagram />
 				</a>
 			</div>
+			{width <= 1024 && (
+				<div className="flex flex-col gap-6 mb-4 mt-[52px]">
+					<div className="relative pl-[26px] mx-auto">
+						<a
+							href="#"
+							className="text-[14px] leading-[24px] align-top no-underline font-introBook text-foreground opacity-[64%] hover:underline hover:decoration-decoration hover:decoration-dashed hover:underline-offset-4 hover:opacity-50"
+						>
+							Privacy policy
+						</a>
+						<Shield className="absolute top-1/2 -translate-y-[8px] left-0" />
+					</div>
+					<p className="text-[14px] font-introBook leading-[24px] text-center block text-foreground opacity-[64%] mx-auto">
+						© 2022. All rights reserved.
+					</p>
+				</div>
+			)}
 		</FooterCol>
 	);
 };
