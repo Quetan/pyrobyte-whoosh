@@ -8,7 +8,7 @@ import { SectionTitle } from "@/shared/ui/section-title";
 
 const Revolution: React.FC = () => {
 	return (
-		<Section className="pt-[98px] pb-20 px-base flex flex-col justify-center text-center">
+		<Section className="pt-[54px]  pb-12 lg:pt-[98px] lg:pb-20 px-4 lg:px-base flex flex-col justify-center text-center">
 			<SectionTitle>Express delivery market revolution</SectionTitle>
 			<SectionSubtitle>
 				Express courier service in the city. We are a reliable logistics partner

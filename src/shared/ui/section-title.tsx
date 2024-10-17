@@ -10,7 +10,10 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 }) => {
 	return (
 		<h1
-			className={cn("h1 mb-7 w-max mx-auto relativen text-center", className)}
+			className={cn(
+				"h1 text-balance mb-2 lg:mb-7 w-full lg:w-max mx-auto relativen text-center",
+				className
+			)}
 			{...props}
 		>
 			{children}
