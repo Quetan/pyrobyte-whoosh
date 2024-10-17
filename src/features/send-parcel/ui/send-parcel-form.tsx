@@ -42,14 +42,14 @@ const SendParcelForm: React.FC = () => {
 				</div>
 			</div>
 			<Button
-				className="mb-4"
+				className="mb-4 mx-auto"
 				disabled={submitDisabled}
 				type="submit"
 				onClick={handleSubmit}
 			>
 				Order
 			</Button>
-			<Button variant="ghost" onClick={handleReset}>
+			<Button className="mx-auto" variant="ghost" onClick={handleReset}>
 				<span className="flex flex-row items-center gap-2">
 					<Close size={8} /> Clear all
 				</span>

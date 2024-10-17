@@ -21,6 +21,7 @@ export default {
 			},
 			backgroundImage: {
 				"banner-section": 'url("../banner-bg.svg")',
+				"mobile-banner-section": 'url("../banner-mobile-bg.svg")',
 				intersect: 'url("../what-we-do.webp")',
 			},
 			colors: {
