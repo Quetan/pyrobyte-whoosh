@@ -8,10 +8,19 @@ import {
 } from "@/shared/ui/partners";
 import { PropsWithChildren } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import { useWindowDimensions } from "@/shared/lib/hooks";
+import { cn } from "@/shared/lib/utils";
 
 const PartnersCarouselItem: React.FC<PropsWithChildren> = ({ children }) => {
+	const { width } = useWindowDimensions();
+
 	return (
-		<CarouselItem className="partner-coursel-item basis-1/5 p-2 flex justify-center items-center">
+		<CarouselItem
+			className={cn(
+				"partner-coursel-item p-2 flex justify-center items-center",
+				width > 1024 ? "basis-1/5" : "basis-1/2"
+			)}
+		>
 			{children}
 		</CarouselItem>
 	);

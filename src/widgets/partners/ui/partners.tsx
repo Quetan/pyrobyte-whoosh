@@ -31,10 +31,10 @@ const CollaborateButton: React.FC<CollaborateButtonProps> = ({
 
 const Partners: React.FC = () => {
 	return (
-		<Section className="pt-[82px] pb-[47px] px-base">
-			<CollaborateButton className="absolute right-[--base-padding] top-20" />
-			<SectionTitle className="mb-[70px]">Our Partners</SectionTitle>
+		<Section className="px-4 pt-[42px] lg:pt-[82px] pb-[47px] lg:px-base">
+			<SectionTitle className="mb-6 lg:mb-[70px]">Our Partners</SectionTitle>
 			<PartnersCarousel />
+			<CollaborateButton className="mx-auto mt-10 lg:mt-0 lg:mx-0 lg:absolute lg:right-[--base-padding] lg:top-20" />
 		</Section>
 	);
 };
