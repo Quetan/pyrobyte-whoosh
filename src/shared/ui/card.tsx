@@ -51,7 +51,7 @@ const TransparentCard: React.FC<CardProps> = ({
 	return (
 		<div
 			className={cn(
-				"w-[300px] min-w-[220px] text-left flex flex-col",
+				"w-[300px] min-w-[220px] text-center lg:text-left flex flex-col",
 				className
 			)}
 			{...props}

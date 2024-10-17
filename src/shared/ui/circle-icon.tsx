@@ -11,7 +11,7 @@ const CircleIcon: React.FC<CircleIconProps> = ({
 	return (
 		<div
 			className={cn(
-				"w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg shadow-[#2B6BF329] p-4",
+				"relative w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg shadow-[#2B6BF329] p-4",
 				className
 			)}
 			{...props}

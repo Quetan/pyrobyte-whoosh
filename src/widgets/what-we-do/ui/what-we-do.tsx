@@ -1,3 +1,4 @@
+import { useWindowDimensions } from "@/shared/lib/hooks";
 import { Button } from "@/shared/ui/button";
 import { CardDescription, CardTitle, TransparentCard } from "@/shared/ui/card";
 import { CircleIcon } from "@/shared/ui/circle-icon";
@@ -8,6 +9,8 @@ import { SectionSubtitle } from "@/shared/ui/section-subtitle";
 import { SectionTitle } from "@/shared/ui/section-title";
 
 const Intersect: React.FC = () => {
+	const { width } = useWindowDimensions();
+	if (width < 1024) return null;
 	return (
 		<div className="absolute top-[-72px] -right-[400px] w-[504px] h-[504px] rotate-45 z-[1] overflow-hidden pointer-events-none rounded-[72px]">
 			<img
@@ -20,13 +23,13 @@ const Intersect: React.FC = () => {
 
 const BackgroundFiller: React.FC = () => {
 	return (
-		<div className="w-[110%] h-full absolute bg-gradient-to-tr from-[#F8FAFF] to-[#F2F6FF] -left-[37px] top-0 rounded-l-full"></div>
+		<div className="absolute w-[110%] h-full bg-gradient-to-tr from-[#F8FAFF] to-[#F2F6FF] -left-[37px] top-0 lg:rounded-l-full"></div>
 	);
 };
 
 const WhatWeDo: React.FC = () => {
 	return (
-		<Section className="py-[74px]">
+		<Section className="px-4 py-[54px] pb-12 lg:px-base lg:py-[74px]">
 			<BackgroundFiller />
 			<Intersect />
 			<div className="z-10">
@@ -37,8 +40,8 @@ const WhatWeDo: React.FC = () => {
 				</SectionSubtitle>
 				<div className="z-10 relative grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-[50px] w-max mx-auto">
 					<TransparentCard>
-						<CircleIcon className="mb-8">
-							<Calculation />
+						<CircleIcon className="mb-8 block mx-auto lg:mx-0">
+							<Calculation className="absolute top-5 left-6" />
 						</CircleIcon>
 						<CardTitle className="mb-5">
 							Online <a href="#">calculation</a>
@@ -49,8 +52,8 @@ const WhatWeDo: React.FC = () => {
 						</CardDescription>
 					</TransparentCard>
 					<TransparentCard>
-						<CircleIcon className="mb-8">
-							<Paperwork />
+						<CircleIcon className="mb-8 block mx-auto lg:mx-0">
+							<Paperwork className="absolute top-5 left-6" />
 						</CircleIcon>
 						<CardTitle className="mb-5">Minimum paperwork</CardTitle>
 						<CardDescription>
@@ -59,8 +62,8 @@ const WhatWeDo: React.FC = () => {
 						</CardDescription>
 					</TransparentCard>
 					<TransparentCard>
-						<CircleIcon className="mb-8">
-							<Payment />
+						<CircleIcon className="mb-8 block mx-auto lg:mx-0">
+							<Payment className="absolute top-6 left-5" />
 						</CircleIcon>
 						<CardTitle className="mb-5">Convenient payment</CardTitle>
 						<CardDescription>
