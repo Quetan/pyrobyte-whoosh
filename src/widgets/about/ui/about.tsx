@@ -9,7 +9,7 @@ const About: React.FC = () => {
 		setOpen(!open);
 	};
 	return (
-		<Section className="pt-[86px] pb-[84px] px-base">
+		<Section className="pt-[54px] pb-[52px] px-4 lg:pt-[86px] lg:pb-[84px] lg:px-base">
 			<details
 				className="text-muted-foreground max-w-[1024px] mx-auto"
 				open={open}
