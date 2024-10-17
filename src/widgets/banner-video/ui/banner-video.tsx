@@ -24,7 +24,7 @@ const PlayButton: React.FC<PlayButtonProps> = ({ className, ...props }) => {
 
 const VideoPlaceholder: React.FC = () => {
 	return (
-		<div className="video w-[374px] h-[232px] rounded-lg relative overflow-hidden">
+		<div className="video w-[328px] h-[200px] lg:w-[374px] lg:h-[232px] rounded-lg relative overflow-hidden">
 			<img
 				className="w-full h-full object-cover transition-transform duration-700 ease-in-out"
 				src="./video.webp"

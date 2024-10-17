@@ -17,7 +17,7 @@ import { SectionDivider } from "@/shared/ui/section-divider";
 
 const Footer: React.FC = () => {
 	return (
-		<footer className="px-base pt-[85px] pb-[56px] bg-banner border-t border-border flex flex-col text-foreground">
+		<footer className="px-base pt-[85px] pb-[56px] bg-banner border-t border-border flex flex-col text-foreground overflow-x-hidden">
 			<div className="grid grid-cols-[3fr_2fr_2fr_3fr] gap-[50px]">
 				<AboutCol />
 				<MenuCol />

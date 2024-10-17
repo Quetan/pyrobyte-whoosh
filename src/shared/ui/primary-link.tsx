@@ -13,7 +13,7 @@ const PrimaryLink: React.FC<PrimaryLinkProps> = ({
 	return (
 		<a
 			href={href}
-			className={cn("text-primary hover:opacity-70", className)}
+			className={cn("text-primary hover:opacity-70 max-w-max", className)}
 			{...props}
 		>
 			<span className="flex flex-row items-center gap-2 w-max">

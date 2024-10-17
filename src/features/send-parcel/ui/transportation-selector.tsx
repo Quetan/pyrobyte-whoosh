@@ -30,7 +30,7 @@ const SwitchButton: React.FC<SwitchButtonProps> = ({
 	return (
 		<Button
 			className={cn(
-				"hover:bg-switch hover:opacity-50 border flex flex-col justify-center gap-2 w-full h-[84px]",
+				"hover:bg-switch hover:opacity-50 border flex flex-col justify-center gap-2 w-full h-[56px] lg:h-[84px]",
 				className,
 				isActive
 					? "bg-switch-active hover:bg-switch-active hover:opacity-100"
@@ -43,7 +43,7 @@ const SwitchButton: React.FC<SwitchButtonProps> = ({
 			{children}
 			<span
 				className={cn(
-					"text-[12px] leading-[24px] text-foreground font-introBook",
+					"text-[12px] leading-[24px] text-foreground font-introBook hidden lg:block",
 					isActive ? "opacity-100" : "opacity-50"
 				)}
 			>

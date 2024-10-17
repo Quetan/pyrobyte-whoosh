@@ -1,7 +1,7 @@
 import { useWindowDimensions } from "@/shared/lib/hooks";
 import { SectionDivider } from "@/shared/ui/section-divider";
 import { About } from "@/widgets/about";
-import { Banner } from "@/widgets/banner";
+import { Banner, MobileBanner } from "@/widgets/banner";
 import { Footer } from "@/widgets/footer";
 import { Header, MobileHeader } from "@/widgets/header";
 import { Partners } from "@/widgets/partners";
@@ -15,7 +15,7 @@ function App() {
 		<>
 			{width > 1024 ? <Header /> : <MobileHeader />}
 			<main className="overflow-x-hidden">
-				<Banner />
+				{width > 1024 ? <Banner /> : <MobileBanner />}
 				<Revolution />
 				<SectionDivider />
 				<Partners />
