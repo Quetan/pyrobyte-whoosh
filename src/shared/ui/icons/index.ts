@@ -26,6 +26,8 @@ import { Facebook } from "./facebook";
 import { Instagram } from "./instagram";
 import { Youtube } from "./youtube";
 import { Vk } from "./vk";
+import { Profile } from "./profile";
+import { Menu } from "./menu";
 
 type IconProps = React.SVGProps<SVGSVGElement> & {
 	size?: number;
@@ -59,5 +61,7 @@ export {
 	Instagram,
 	Youtube,
 	Vk,
+	Profile,
+	Menu,
 };
 export type { IconProps };
