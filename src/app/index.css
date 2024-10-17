@@ -94,8 +94,12 @@
 		@apply border-border;
 	}
 
+	:root {
+		@apply overflow-x-hidden;
+	}
+
 	body {
-		@apply bg-background text-foreground font-intro decoration-decoration;
+		@apply bg-background text-foreground font-intro decoration-decoration overflow-x-hidden;
 	}
 
 	h1 {
